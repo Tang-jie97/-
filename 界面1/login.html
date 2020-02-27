@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>登录</title>
+
+
+    <style type="text/css">
+        body {
+            background: url(img/b.jpg);
+            /*背景铺满屏幕*/
+            background-size: 100%;
+            /*动画名称*/
+            animation-name: login_style;
+            /*设置动画的周期*/
+            animation-duration: 20s;
+            /*动画延时*/
+            animation-delay: 0s;
+            /*自动循环播放*/
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+        }
+        
+        @keyframes login_style {
+            0% {
+                background: url(img/b.jpg);
+                background-size: 100%;
+            }
+            50% {
+                background: url(img/a.jpg);
+                background-size: 100%;
+            }
+            100% {
+                background: url(img/c.jpg);
+                background-size: 100%;
+            }
+        }
+        
+        .form {
+            background: rgba(255, 255, 255, 0.5);
+            width: 500px;
+            margin: 240px auto;
+        }
+        
+        .form_title {
+            text-align: center;
+            font-size: 24px;
+        }
+        
+        .input_control {
+            width: 360px;
+            margin: 20px auto;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 18px;
+            height: 2.4em;
+            border-radius: 4px;
+            border: 1px solid #c8cccf;
+            color: #6a6f77;
+            -web-kit-appearance: none;
+            -moz-appearance: none;
+            display: block;
+            outline: 0;
+            padding: 0 1em;
+            text-decoration: none;
+            width: 100%;
+        }
+        
+        input:focus {
+            border: 1px solid #747dff;
+        }
+        
+        a {
+            text-decoration: none;
+            display: block;
+            float: right;
+            margin-right: 70px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #165dcf;
+        }
+        
+        button {
+            text-align: center;
+            font-size: 18px;
+            height: 2.4em;
+            border-radius: 4px;
+            border: 1px solid #c8cccf;
+            background-color: #165dcf;
+            -web-kit-appearance: none;
+            -moz-appearance: none;
+            outline: 0;
+            padding: 0 1em;
+            text-decoration: none;
+            width: 360px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form">
+        <div class="form_title">
+            <h2>多媒体素材管理库</h2>
+            <div>
+                <div class="input_control">
+                    <input type="text" placeholder="请输入用户名" id="username" name="username" maxlength="20" />
+                </div>
+                <div class="input_control">
+                    <input type="password" placeholder="请输入登录密码" id="password" name="password" maxlength="8" />
+                </div>
+                <a href="">...没有账号点击注册</a>
+                <button type="submit" name="submit">登录</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
